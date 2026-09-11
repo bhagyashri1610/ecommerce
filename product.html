@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="description"
+        content="ShopEase product details - Discover quality products at great prices.">
+    <title>ShopEase | Product Details</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+<header class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="logo">
+            🛍️ <span>Shop<span>Ease</span></span>
+        </a>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="categories.html">Categories</a>
+            <a href="about.html">About</a>
+        </nav>
+        <a href="cart.html" class="cart-button">
+            🛒
+            <span id="cartCount">8</span>
+        </a>
+    </div>
+</header>
+<main class="product-section">
+    <div class="product-container">
+        <a href="products.html" class="back-link">
+            ← Back to Products
+        </a>
+        <div class="product-details">
+            <div class="product-gallery">
+
+                <div class="image-card">
+
+                    <div class="discount-badge">
+                        20% OFF
+                    </div>
+
+                    <div class="product-emoji">
+                        ⌚
+                    </div>
+
+                    <button class="wishlist">
+                        ♡
+                    </button>
+
+                </div>
+
+                <div class="thumbnail-row">
+
+                    <div class="thumbnail active">
+                        ⌚
+                    </div>
+
+                    <div class="thumbnail">
+                        📱
+                    </div>
+
+                    <div class="thumbnail">
+                        🔋
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= PRODUCT INFORMATION ================= -->
+
+            <div class="product-info">
+
+                <div class="category">
+                    ELECTRONICS
+                </div>
+
+                <h1>
+                    SmartFit Watch Pro
+                </h1>
+
+                <div class="rating-row">
+
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+
+                    <strong>4.7</strong>
+
+                    <span>
+                        (128 Reviews)
+                    </span>
+
+                </div>
+
+
+                <div class="price-area">
+
+                    <span class="current-price">
+                        ₹3,299
+                    </span>
+
+                    <span class="old-price">
+                        ₹4,199
+                    </span>
+
+                    <span class="save">
+                        Save ₹900
+                    </span>
+
+                </div>
+
+
+                <p class="description">
+
+                    SmartFit Watch Pro is a modern smartwatch designed
+                    for your everyday lifestyle. Track your activity,
+                    receive notifications and stay connected with a
+                    stylish and comfortable design.
+
+                </p>
+
+
+                <!-- Features -->
+
+                <div class="features">
+
+                    <div class="feature">
+                        <span>✓</span>
+                        Fitness Tracking
+                    </div>
+
+                    <div class="feature">
+                        <span>✓</span>
+                        Heart Rate Monitor
+                    </div>
+
+                    <div class="feature">
+                        <span>✓</span>
+                        Long Battery Life
+                    </div>
+
+                    <div class="feature">
+                        <span>✓</span>
+                        Water Resistant
+                    </div>
+
+                </div>
+
+
+                <!-- Quantity -->
+
+                <div class="purchase-area">
+
+                    <div>
+
+                        <label>
+                            Quantity
+                        </label>
+
+                        <div class="quantity">
+
+                            <button id="minusBtn">
+                                −
+                            </button>
+
+                            <span id="quantity">
+                                1
+                            </span>
+
+                            <button id="plusBtn">
+                                +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        class="add-cart"
+                        id="addCartBtn"
+                    >
+                        🛒 Add to Cart
+                    </button>
+
+                </div>
+
+
+                <!-- Service Cards -->
+
+                <div class="service-grid">
+
+                    <div class="service-card">
+
+                        <div class="service-icon">
+                            🚚
+                        </div>
+
+                        <div>
+                            <strong>Free Delivery</strong>
+                            <small>On orders above ₹999</small>
+                        </div>
+
+                    </div>
+
+
+                    <div class="service-card">
+
+                        <div class="service-icon">
+                            🔒
+                        </div>
+
+                        <div>
+                            <strong>Secure Payment</strong>
+                            <small>100% secure checkout</small>
+                        </div>
+
+                    </div>
+
+
+                    <div class="service-card">
+
+                        <div class="service-icon">
+                            ↩️
+                        </div>
+
+                        <div>
+                            <strong>Easy Returns</strong>
+                            <small>7 days return policy</small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-logo">
+            🛍️ Shop<span>Ease</span>
+        </div>
+
+        <p>
+            Your trusted online shopping destination.
+        </p>
+
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="about.html">About</a>
+        </div>
+
+        <p class="copyright">
+            © 2026 ShopEase. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script>
+
+const minusBtn = document.getElementById("minusBtn");
+const plusBtn = document.getElementById("plusBtn");
+const quantity = document.getElementById("quantity");
+const addCartBtn = document.getElementById("addCartBtn");
+
+let count = 1;
+
+
+/* Increase */
+
+plusBtn.addEventListener("click", () => {
+
+    count++;
+
+    quantity.textContent = count;
+
+});
+
+
+/* Decrease */
+
+minusBtn.addEventListener("click", () => {
+
+    if (count > 1) {
+
+        count--;
+
+        quantity.textContent = count;
+
+    }
+
+});
+
+
+/* Add to Cart */
+
+addCartBtn.addEventListener("click", () => {
+
+    addCartBtn.innerHTML = "✓ Added to Cart";
+
+    addCartBtn.classList.add("added");
+
+    setTimeout(() => {
+
+        addCartBtn.innerHTML = "🛒 Add to Cart";
+
+        addCartBtn.classList.remove("added");
+
+    }, 1500);
+
+});
+
+</script>
+
+</body>
+</html>
